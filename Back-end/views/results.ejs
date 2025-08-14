@@ -27,6 +27,7 @@
     <div class="row1 muted small">
       <span id="actuals-monthly-summary"></span>
     </div>
+    
     <canvas id="actualsChart"></canvas>
     <hr/>
     <h3 class="small"><%= t('playground.actuals.breakdown') %></h3>
@@ -56,11 +57,12 @@
   <section class="card">
     <h2><%= t('playground.whatIf.title') %></h2>
     <div class="row1 muted small">
-      <span id="whatif-monthly-summary"></span>
+      <span id="horizon-summary"></span>
+      
     </div>
     <canvas id="whatIfChart"></canvas>
     <hr/>
-    <div class="small muted"><%= t('playground.whatIf.editNote') %></div>
+    <span id="whatif-monthly-summary"></span>
 
     <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
       <div>
@@ -88,15 +90,16 @@
           <tbody id="editExpenseBody"></tbody>
         </table>
       </div>
-    </div>
 
-    <div class="row1 muted small" style="margin-top:.5rem;">
-      <span class="muted small"><%= t('playground.horizonSummaryLabel') %>:</span>
-      <span id="horizon-summary"></span>
+
+        <div class="row1 muted small" style="margin-top:.5rem;">
+        <div class="small muted">Edit the numbers below to simulate changes. Chart updates live.</div>
+      </div>
     </div>
   </section>
 
 <!-- Expose translations for client JS -->
+
 <script>
   window.I18N = <%- JSON.stringify({
     income: t('playground.actuals.incomeHeader'),
@@ -111,5 +114,5 @@
     errors: { analyticsLoad: t('playground.errors.analyticsLoad') }
   }) %>;
 </script>
-
-<%- include("partials/footer") %>
+    <script src="/js/analytics.js"></script>
+<%- include('partials/footer') %>

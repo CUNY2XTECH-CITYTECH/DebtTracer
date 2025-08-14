@@ -18,13 +18,33 @@
       "use": "理财不该复杂，而应当更聪明。Debt Tracer 的目标是简化你的财务、帮助你更快还清债务，并为你提供构建更好财务未来的工具——一切尽在同一处。",
       "use1": "无论你正在同时处理多笔债务、为大额开支存钱，还是只想更好地掌控日常花费，Debt Tracer 都能提供洞见与工具，助你掌控自己的资金。",
       "member": "会员评价：",
-      "member1": "Debt Tracer 绝对拯救了我的生活！这款了不起的工具让我更好地管理了我的钱！",
+      "member1": "“Debt Tracer 绝对拯救了我的生活！这款了不起的工具让我更好地管理了我的钱！”",
       "member2": "“Debt Tracer 改变了我对金钱以及如何有效管理它的看法。”",
-      "member3": "我喜欢 Debt Tracer 的简洁与设计。它真的",
+      "member3": "“我喜欢 Debt Tracer 的简洁与设计。用它记账特别顺手，还能帮我管好钱。”",
       "copyright": "版权所有。"
     },
-    "login": "登录",
-    "register": "注册",
+   "login": {
+  "title": "登录",
+  "welcome": "欢迎回来！",
+  "username": "用户名",
+  "password": "密码",
+  "loginButton": "登录",
+  "home": "首页",
+  "noAccount": "还没有账号？",
+  "registerHere": "在此注册"
+},
+"register": {
+  "title": "注册",
+  "fullName": "全名",
+  "email": "电子邮箱",
+  "password": "密码",
+  "passwordHint": "必须至少 8 个字符",
+  "emailHint": "请输入有效的电子邮箱地址",
+  "registerButton": "注册",
+  "home": "主页",
+  "haveAccount": "已经有账号？",
+  "loginHere": "在此登录"
+},
     "dashboard": {
       "financialSummary": "财务概览",
       "totalIncome": "总收入",
@@ -149,6 +169,9 @@
         "amountHeader": "金额"
       },
       "horizonSummaryLabel": "范围汇总"
+    },
+    "chat": {
+      "welcome": "👋 你好！我是 Sena。我在这里帮助你了解并管理你的债务。有什么都可以问我！"
     },
     "auth": {
       "welcome": "欢迎回来！",
